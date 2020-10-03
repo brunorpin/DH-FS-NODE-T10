@@ -1,0 +1,29 @@
+body{
+    font-family: Arial;
+}
+
+p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 20px;
+}
+h2{
+    font-style: italic;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Cores de fundo*/
+body{
+    background-color: #8f6464;
+    background-image: url(../imagens/quemSomos.png);
+    /*background-size: 100%;*/
+    background-repeat: no-repeat;
+}
+p{
+    color: white;
+}

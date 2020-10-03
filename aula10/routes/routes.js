@@ -1,5 +1,7 @@
 const express = require("express");
 const routes = express.Router();
+const ProdutoController = require("../controllers/ProdutoController")
+const QueryController = require("../controllers/QueryController")
 
 //let produtos = [];
 
@@ -14,19 +16,10 @@ const routes = express.Router();
 //  codigo: "testebarcode"
 //  }
 
-routes.get('/produto/adicionar/:nome/:preco/:quantidade/:codigo', (req, res) => {
 
-	let {nome, preco, quantidade, codigo} = req.params;
-	
-	let produto ={
-		nome,
-		preco,
-		quantidade,
-		codigo
-	}
-	
-	res.send(produto)
-	
-})
+routes.get('/produto/adicionar/:nome/:preco?/:quantidade?/:codigo?', ProdutoController.getProduto )
+
+//Desafio 1 - criar um parametro para nome e uma query string para sobrenome e exibir os dois concatenados na teça com a mensagem de saudacao "ola" + nome + sobrenome
+routes.get('/query/params/:nome', QueryController.getQController)
 
 module.exports = routes;

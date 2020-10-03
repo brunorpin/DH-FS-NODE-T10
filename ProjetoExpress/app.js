@@ -1,4 +1,5 @@
 const express = require('express');
+const rotasProdutos = require('./rotas/rotasProdutos')
 
 let app = express();
 
@@ -11,10 +12,12 @@ app.get('/contatos', (req,res) => {
     
 })
 
-app.get('/produtos/:id?', (req,res) =>{
-    let {id} = req.params;
-    console.log("Eu tenho um produto com o id: ",id);
-})
+// app.get('/produtos/:id?', (req,res) =>{
+//     let {id} = req.params;
+//     console.log("Eu tenho um produto com o id: ",id);
+// })
+
+app.use('/produtos',rotasProdutos);
 
 //Criando um Servidor
 app.listen(3000,() => {
