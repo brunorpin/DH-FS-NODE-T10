@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.caixa{
+    width: 669px;
+    height: 100vh;
+    margin: 0px auto;
+    border: 3px solid gray;
+    /* display flex sempre fica no elemento pai */
+    display: flex;
+    /* utilizamos o elemento wrap pois assim é possivel quebrar as caixas em linhas e coloca na mesma ordem do html*/
+     /* o flex-wrap: wrap-reverse; coloca fora de ordem do html */
+    flex-wrap: wrap;
+   /* flex-direction: todos vao ficar alinhados com a linha */
+    flex-direction: column;
+    /* justify-content alinha  os elementos horizontamente*/
+    justify-content: center;
+    /*  align-items: alinhar na vertifcal*/
+    align-items: center;
+    align-self: ;
+    
+    
+}
+
+.caixa div{
+    padding: 20px;
+    background-color: orangered;
+    margin: 10px;
+    width: 200px;
+}
+
+/* flex-grow divide a caixa automaticamente para preencher o tamanho restante */
+.item1{
+    flex-grow: 5;
+    /* fazer o alinhamento de um elemento, align-self */
+    align-self: flex-start;
+}
+.item2{
+    flex-grow: 2;
+}
+.item3{
+    flex-grow: 2;
+}

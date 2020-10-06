@@ -5,10 +5,21 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="CSS/styles.css">
     </head>
-    <body>
-        <h1 align="center"> Full Stack Blend<abbr>  DH</abbr></h1>
+    <body>  
+            
+            <!--Cabeçalho-->
+            <header>
+                Cabeçalho
+            </header>
+
+            <!--Conteudo principal-->
+            <main>
+                Conteudo principal
+                <h1 align="center"> Full Stack Blend<abbr>  DH</abbr></h1>
         <h2>Curso de Programaçao</h2>
         <p>
+            <span>Isto é um span</span>
+            <br>
             
             <em>Ola</em>Texto Completo Texto<strong>Com bold</strong> Completo Texto Completo Texto Completo Texto Completo Texto Completo Texto Completo
             <mark>Completo Texto Completo Texto Completo Texto Completo Texto Completo Texto Completo</mark>
@@ -33,45 +44,66 @@
         <img src="imagens/quemSomos.png" alt="">
 
         <iframe src="https://www.digitalhouse.com/" frameborder="0" width="400" height="800"> </iframe>
-
-
-        <form>
-            <label for="nome">Nome: </label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            <br>
-            <br>
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="senha">Senha: </label>
-            <input type="password" id="senha" name="senha">
-            <br><br>
             
-<br>
-            <label for="">Voce ja foi no cinema este ano?</label>
-            <br>
-            <input type="radio" id="sim" name="cinema" value="sim"><label for="sim">Sim</label>
-            <br>
-            <input type="radio" id="nao" name="cinema" value="nao"><label for="nao">Nào</label>
-            <br>
-            <label for="">QUal seu genero de filme?</label>
-            <br>
-            <input type="checkbox" id="terror" name="genero" value="terror"><label for="terror">Terror</label>
-            <br>
-            <input type="checkbox" id="drama" name="genero" value="drama" checked><label for="drama">Drama</label>
-            <br>
-            <label for="pais">País</label>
-            <select name="pais" id="pais">
-                <option selected disabled>Selecione</option>
-                <option value="EUA">Estados Unidos da America</option>
-                <option value="BRA">Brasil</option>
-                <option value="AR">Argentina</option>
-            </select>
-            <br>
-            <label for="mensagem">Mensagem</label>
-            <br>
-            <textarea name="nensagem" id="mensagem" cols="30" rows="10"></textarea>
-            <br>
+
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha">
+                <br><br>
+                
+    <br>
+                <label for="">Voce ja foi no cinema este ano?</label>
+                <br>
+                <input type="radio" id="sim" name="cinema" value="sim"><label for="sim">Sim</label>
+                <br>
+                <input type="radio" id="nao" name="cinema" value="nao"><label for="nao">Nào</label>
+                <br>
+                <label for="">QUal seu genero de filme?</label>
+                <br>
+                <input type="checkbox" id="terror" name="genero" value="terror"><label for="terror">Terror</label>
+                <br>
+                <input type="checkbox" id="drama" name="genero" value="drama" checked><label for="drama">Drama</label>
+                <br>
+                <label for="pais">País</label>
+                <select name="pais" id="pais">
+                    <option selected disabled>Selecione</option>
+                    <option value="EUA">Estados Unidos da America</option>
+                    <option value="BRA">Brasil</option>
+                    <option value="AR">Argentina</option>
+                </select>
+                <br>
+                <label for="mensagem">Mensagem</label>
+                <br>
+                <textarea name="nensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <br>
+
+                <div class="caixa1">A</div>
+                <div class="caixa2">B</div>
+                <div class="caixa3">C</div>
+
+                <section class="noticias"><h1>Noticias</h1>
+                <article>
+                <div>Caixa Float A</div>
+                <div>Caixa Float B</div>
+                <div>Caixa Float C</div>
+                </article>
+            </section>
+                
+                </main>
+            <!--Rodapé-->
+            <footer>
+                copyright
+            </footer>
+
+
+
             <button type="submit">Enviar</button>
             <button type="reset">Limpar Dados</button>
         </form>

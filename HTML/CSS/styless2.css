@@ -1,0 +1,88 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;;
+}
+
+header{
+    text-align: center;
+    width: 100%;
+    /* height: 100vh; */
+    border: 2px solid gray;
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    background-color: #f2f2f2;
+    width: 100%;
+    position: relative;
+    padding: 100px 0 30px;
+}
+/* relative trabalha juntamente com o top, left, bottom, right */
+footer{
+    text-align: center;
+    width: 100%;
+    border: 2px solid gray;
+    padding: 20px;
+    /* só conseguimos utilizar o top, left, right e bottom se o position estiver ativo */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+}
+
+img{
+    /* position: absolute; */
+    /* top: 0; */
+    
+}
+img.chat{
+    width: 80px;
+    /* fixed deixa o objeto fixo na janela  */
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
+/* POSITION RELATIVE: pequenas compensações e sobreposições
+POSITION ABSOLUTE: posicione os elementos absolutamente em relação aos lados do corpo
+POSITION FIXED: corrija um elemento e o acompanhe ao rolar
+RELATIVE+ABSOLUTE: O elemento com position absoulte toma como referencia as arestas de seu conteiner pai e nao o body */
+
+/* trabalhando com o viewports para melhorar a visualização do site em qualquer dispositivos. */
+img.banner{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+}
+
+p{
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: justify;
+}
