@@ -1,12 +1,35 @@
 .header{
-    background-color: aqua;
+    background-color: aquamarine;
     height: 150px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.section{
-    background-color: fuchsia;
+.section-one{
+    background-color:blueviolet;
     height: 150px;
     margin-bottom: 10px;
+}
+
+.section-two{
+    background-color:salmon;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.section-three{
+    background-color:sandybrown;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: aquamarine;
+    height: 150px;
+
+}
+@media (max-width: 540px){
+    .section-one{
+        background-color: blue;
+    }
 }
